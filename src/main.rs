@@ -16,6 +16,6 @@ fn main() {
         }
         script.push(v);
     }
-    let mut f = File::create("out.irc");
+    let mut f: File = File::create("out.irc").expect("Could not create output file!");
     dbg!(script);
 }
